@@ -113,7 +113,7 @@ done
 m4_include(../scripts/library/term_colors.sh)
 
 case $(( FIND+LOCATE+PACDB )) in
-	0) FIND=1;; # set the default search option
+	0) PACDB=1;; # set the default search option
 	[^1]) error "Only one search option may be used at a time"
 	 	usage; exit 1;;
 esac
